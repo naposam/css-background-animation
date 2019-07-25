@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: #000;
+		}
+		#go{
+    height: 80px;
+        width: 75%;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        margin-left: 120px;
+        padding: 10px;
+        color: #fff;
+    }
+		ul{
+        margin-left: 7rem;
+    }
+    nav ul li {
+        float: left;
+        line-height: 10px;
+        margin: 10px;
+        list-style-type:none;
+        
+        padding: 10px;
+        transition:0.9s all;
+    }
+    
+    nav a{
+    text-decoration: none;
+   display: block;
+   color: #fff;
+   text-align: center;
+
+ 
+    
+    }
+    nav ul li:hover{
+    background: red;
+    margin: 10px;
+    width: 80px;
+    
+    
+    }
+		.shadow{
+			position: relative;
+			margin:200px auto 0;
+			width: 400px;
+			height: 250px;
+			background:linear-gradient(0deg, #000,#262626);
+		}
+		.shadow:before,.shadow:after{
+			content: '';
+			position: absolute;
+			top:-2px;
+			left: -2px;
+			background: linear-gradient(45deg,#fb0094,#0000ff, #00ff00,#ffff00,#ff0000,#fb0094,#0000ff, #00ff00,#ffff00,#ff0000);
+			background-size: 400%;
+			width: calc(100%  + 4px);
+			height: calc(100% +  4px);
+			z-index: -1;
+			animation: sam 20s linear infinite;
+
+		}
+		.shadow:after{
+			filter: blur(20px);
+		}
+		@keyframes sam{
+			0%{
+				background-position: 0 0;
+			}
+			50%{
+				background-position: 300% 0;
+			}
+			100%{
+				background-position: 0 0;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+
+<div id="banner">
+    <div class="container lightSpeedIn animated">
+<nav id="go">
+    <ul>
+         <li><a href="index.html">Home</a></li>  
+         <li><a href="rotate.html">Paper Rotate</a></li>  
+         <li><a href="shadow.html">Growning shadow</a></li>  
+         <li><a href="spinning.html">Spinning</a></li>  
+         <li><a href="loading.html">Circle Animation</a></li>  
+         
+        
+    </ul>   
+    
+</nav>
+</div>
+<div class="shadow">
+
+</div>
+</body>
+</html>
